@@ -119,6 +119,7 @@ border: 0px solid black;
     width: 48%;
     margin: 6px 0;
   }
+}
 @media only screen and (max-width: 500px) {
   .aleka{
     width: 100%;
@@ -176,5 +177,7 @@ border: 0px solid black;
 
 </body>
 </html>
+
+
 
 
