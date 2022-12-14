@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hornav</title>
-    <style>
-        body{
-            width: 70%;
-            margin-left: 13%;
-        }
-       ul {
-  list-style-type: none;
-  width:70%;
-  position:fixed;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navigation</title>
+<head>
+<style>
+.center {
+  margin:auto;
+  height:auto;
+  width:60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
 }
-
-li {
+.head{
+width: 100%;
+height: 52px;
+background-color:black;
+display:block;
+color:white;
+ margin: 0px;
+  padding: 0px;
+} ul {
+  list-style-type: none;
+  width:100%;
+  position:absolute;
+  top:0px;
+  margin-top: 8px;
+  padding: 0px;
+  
+}
+li
+ {
   float: left;
 }
-
-
 li a ,.droptn{
-  display:inline-block;
+  display:block;
   color: white;
+  font-size: 20px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-
 li a:hover:not(.active),.dropdown:hover .droptn {
   background-color: #111;
 }
-
 .active {
   background-color: #04AA6D;
 }
 .right{
     float: right;
+    margin-right:20px;
+    wodth:0px;
 }
-
 li .dropdown{
   display: inline-block;
 }
@@ -52,7 +63,6 @@ li .dropdown{
   min-width: 100px;
   background-color: rgb(245, 237, 237);
   z-index: 10;
-  
 }
 .dropdown-content a{
     color:black;
@@ -70,20 +80,25 @@ li .dropdown{
   display: block;
 }
 @media screen and (max-width: 600px) {
-   
-   li {width:100%;}
+   li {
+    width:40%;
+    background-color:black;
+  }
+ li a ,.droptn{text-align: left;}
  }
-
 </style>
 </head>
 <body>
+<div class="head">
+
+<div >
     <ul>
         <li><a href="a" class="active">home</a></li>
         <li><a href="a">contact</a></li>
         <li><a href="a">news</a></li>
         <li><a href="a">about</a></li>
         <li class="dropdown">
-         <a href="javascript:void(0)"class="droptn">phon no</a>
+         <a href="#g"class="droptn">phon number</a>
          <div class="dropdown-content">
          <a href="#no" class="b">0989025224</a>
          <a href="#no" class="b">0989025224</a>
@@ -93,5 +108,15 @@ li .dropdown{
         </li>
         <li class="right"><a href="a">logout</a></li>
     </ul>
+    </div>
+</div>
+<div class="center">
+<h2>Center Align Elements</h2>
+<p>To horizontally center a block element (like div), use margin: auto;</p>
+
+
+  <p>Hello To horizontally center a block element (like div), use margin To horizontally center a block element (like div), use margin To horizontally center a block element (like div), use margin To horizontally center a block element (like div), use margin To horizontally center a block element (like div), use margin To horizontally center a  To horizontally center a block element (like div), use margin To horizontally center a block element (like div), use margin To horizontally center a block element (like div), use margin To horizontally center a block element (like div), use marginblock element (like div), use margin World!</p>
+</div>
+
 </body>
 </html>
